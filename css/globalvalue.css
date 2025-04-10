@@ -1,0 +1,35 @@
+/* start global value */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #F9F9F9;
+}
+.container{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/*small*/
+@media(min-width:768px){
+  .container{
+      width:750px;
+  }
+}
+/* medium */
+@media(min-width:992px){
+  .container{
+      width:970px;
+  }
+}
+/* large */
+@media(min-width:1200px){
+  .container{
+      width:1170px;
+  }
+}
+/* end global value */
