@@ -117,79 +117,116 @@ header .container {
 /* END HEADER */
 
 
-
 /* START  SECTION MAIN */
-section.main{
+section.main {
   padding-top: 149px;
   direction: rtl;
   font-family: 'Tajawal', sans-serif;
   background-color: #fff;
 }
-section.main .container{
+
+section.main .container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 0 auto;
   flex-direction: row;
+  gap: 20px;
 }
-section.main .container .text{
+
+section.main .container .text {
   margin-left: 30px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   width: 50%;
 }
-section.main .container .text h1{
+
+section.main .container .text h1 {
   color: black;
   margin-bottom: 20px;
-  font-family: 'Tajawal', sans-serif;
   font-size: 36px;
   line-height: 1.25em;
   font-weight: 600;
-  margin-right: -10px;
-}
-section.main .container .text p{
-    color: rgb(50, 50, 50);
-    margin-bottom: 10px;
-    font-family: "Tajawal", Sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.7em;
-}
-section.main .container .Subscription {
-  font-family: "Tajawal", Sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  border-radius: 7px 7px 7px 7px;
-
 }
 
-section.main .container .Subscription img{
-    display: block;
-    width: 300px;
-    height: 300px;
+section.main .container .text p {
+  color: rgb(50, 50, 50);
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.7em;
 }
 
-@media(max-width:762px){
-  section.main .container{
+section.main .container .text .features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+section.main .container .text .features li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+section.main .container .text .features li i {
+  color: #28a745;
+  margin-left: 10px;
+}
+
+.cta-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  width: fit-content;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #218838;
+  color: #fff;
+}
+
+section.main .container .Subscription img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+/* Responsive */
+@media (max-width: 762px) {
+  section.main .container {
     flex-direction: column;
+    text-align: center;
   }
-  section.main .container .text{
+
+  section.main .container .text {
     margin: 0;
-    align-items: center;
     width: 100%;
+    align-items: center;
+  }
+
+  section.main .container .text .features li {
+    font-size: 16px;
+  }
+
+  section.main .container .Subscription img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
   }
 }
 /* END SECTION MAIN */
 
 /* START SECTION Offers */
-section.Offers{
+section.Offers {
   direction: rtl;
   background-color: #fff;
-  padding-top:40px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
-section.Offers h1{
+
+section.Offers h1 {
   text-align: center;
   color: #20e243;
   font-family: 'Tajawal', sans-serif;
@@ -198,139 +235,211 @@ section.Offers h1{
   font-weight: 600;
   line-height: 1.25em;
 }
-section.Offers h2{
+
+section.Offers h2 {
   text-align: center;
   color: #595b59;
-  padding-top:10px;
+  padding-top: 10px;
   padding-bottom: 10px;
   font-family: 'Tajawal', sans-serif;
   font-size: 22px;
   font-weight: 400;
 }
 
-section.Offers .container{
+section.Offers .container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: stretch;
   flex-wrap: wrap;
   margin: 0 auto;
   padding-bottom: 80px;
+  gap: 20px;
 }
-section.Offers .container .box{
-    width: 242px;
-    height: 310px;
-    background-color: white;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+
+section.Offers .container .box {
+  width: 260px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
-section.Offers .container .box .content{
-  width: 180px;  
+
+section.Offers .container .box:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(32, 226, 67, 0.3) 0px 10px 30px;
 }
-section.Offers .container .box .content img{
+
+section.Offers .container .box .content {
   width: 100%;
-  /* height: 100%; */
 }
-section.Offers .container .box .content h1{
-  font-size: 13px;
+
+section.Offers .container .box .content img {
+  width: 100%;
+  margin-bottom: 10px;
 }
-section.Offers .container .box .content button{
+
+section.Offers .container .box .content h1 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+section.Offers .container .box .content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5em;
+}
+
+section.Offers .container .box .content button {
   border: none;
   background-color: #20e243;
-  padding: 5px;
-  border-radius: 3px;
+  padding: 8px 16px;
+  border-radius: 6px;
   color: white;
-  margin-top: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-/* end section Offers */
+
+section.Offers .container .box .content button:hover {
+  background-color: #1ab73b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section.Offers .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.Offers .container .box {
+    width: 90%;
+  }
+}
+/* END SECTION Offers */
 
 /* START SECTION Prices */
-section.Prices{
+section.Prices {
   direction: rtl;
   background-color: #fff;
-  padding-top:40px;
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
-section.Prices h1{
+
+section.Prices h1 {
   text-align: center;
   color: #20e243;
   font-family: 'Tajawal', sans-serif;
-  padding-top: 20px;
   font-size: 36px;
   font-weight: 600;
   line-height: 1.25em;
+  margin-bottom: 10px;
 }
-section.Prices h2{
+
+section.Prices h2 {
   text-align: center;
   color: #595b59;
-  padding-top:10px;
-  padding-bottom: 10px;
   font-family: 'Tajawal', sans-serif;
   font-size: 22px;
   font-weight: 400;
+  margin-bottom: 40px;
 }
 
-section.Prices .container{
+section.Prices .container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto;
-  padding-bottom: 80px;
+  gap: 20px;
 }
-section.Prices .container .box{
-    width: 242px;
-    height: 360px;
-    background-color: white;
-    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:120px  20px;
-  text-align: center;
+
+section.Prices .container .box {
+  width: 260px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-section.Prices .container .box .content{
+
+section.Prices .container .box:hover {
+  transform: translateY(-8px);
+  box-shadow: rgba(32, 226, 67, 0.3) 0px 10px 30px;
+}
+
+section.Prices .container .box .content {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  height: 450px;
-  width: 100%;
-}
-section.Prices .container .box .content .photo{
-  height: 230px;
-  background-color: antiquewhite;
-}
-section.Prices .container .box .content .photo img{
-  width: 100%;
   height: 100%;
 }
-section.Prices .container .box .content .txt {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  align-items: flex-start;
-  padding: 10px;
+
+section.Prices .container .box .content .photo {
+  height: 200px;
+  background-color: #fff2e0;
 }
 
-section.Prices .container .box .content .txt h1{
-  font-size: 25px;
+section.Prices .container .box .content .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.Prices .container .box .content .txt {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+section.Prices .container .box .content .txt h1 {
+  font-size: 20px;
   color: black;
+  font-weight: bold;
+  margin: 0;
 }
-section.Prices .container .box .content .txt button{
-  border: none;
+
+section.Prices .container .box .content .txt .desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5em;
+}
+
+section.Prices .container .box .content .txt .price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #20e243;
+}
+
+section.Prices .container .box .content .txt .tag {
   background-color: #20e243;
-  padding: 5px 16px;
-  border-radius: 13px;
   color: white;
-  margin-top: 20px;
-  margin-bottom: 8px;
+  font-size: 13px;
+  padding: 5px 12px;
+  border-radius: 12px;
+  margin-top: 10px;
+  align-self: flex-start;
 }
-/* end section Prices */
+
+/* Responsive */
+@media (max-width: 768px) {
+  section.Prices .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.Prices .container .box {
+    width: 90%;
+  }
+}
+/* END SECTION Prices */
+
 
 /* start section questions */
 section.questionss{
@@ -577,6 +686,81 @@ section.contact-us h2 {
 }
 /* END SECTION Contact Us */
 
+/* START SECTION Location */
+section.location {
+  direction: rtl;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+  font-family: 'Tajawal', sans-serif;
+}
+
+section.location h1 {
+  text-align: center;
+  color: #20e243;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+section.location h2 {
+  text-align: center;
+  color: #595b59;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+section.location .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+section.location .map {
+  flex: 1 1 500px;
+  height: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+section.location .details {
+  flex: 1 1 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+section.location .details h3 {
+  color: #20e243;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+section.location .details p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section.location .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.location .map,
+  section.location .details {
+    width: 100%;
+  }
+}
+/* END SECTION Location */
+
+
 
 .partners {
   direction: rtl;
@@ -608,3 +792,4 @@ section.contact-us h2 {
 .partners-logos img:hover {
   filter: grayscale(0%);
 }
+

@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>Page Landing</title>
 </head>
 <body>
@@ -30,8 +32,10 @@
           <li><a href="#main">الرئيسية</a></li>
           <li><a href="#Offers">العروض</a></li>
           <li><a href="#Prices">الأسعار</a></li>
-          <li><a href="#Questions">الأسئلة الشائعة</a></li>
+          <li><a href="#partners">شركائنا</a></li>
           <li><a href="#Contact">تواصل معنا</a></li>
+          <li><a href="#Questions">الأسئلة الشائعة</a></li>
+          <li><a href="#location">موقعنا</a></li>
           <li><a href="#Download">تنزيل التطبيق</a></li>
         </ul>
       </nav>
@@ -41,102 +45,113 @@
 <!-- END HEADER -->
 
 
-     <!-- START SECTION MAIN -->
-  <section class="main" id="main">
-    <div class="container">
-      <div class="text">
-        <h1>تطبيق وصلي</h1>
-        <p>
-          هدفنا هو توصيل الطعام اليك 
-        </p>
-      </div>
-      <div class="Subscription">
-          <img src="./image/Home.png" alt="" srcset="">
-      </div>
+  <!-- START SECTION MAIN -->
+<section class="main" id="main">
+  <div class="container">
+    <div class="text" data-aos="fade-left">
+      <h1>تطبيق وصلي</h1>
+      <p>
+        هدفنا هو توصيل الطعام إليك بسرعة، وبجودة عالية، وأمان كامل.
+      </p>
+      <ul class="features">
+        <li><i class="fas fa-check-circle"></i> توصيل سريع لكل الأحياء</li>
+        <li><i class="fas fa-check-circle"></i> الدفع عند الاستلام أو عبر التطبيق</li>
+        <li><i class="fas fa-check-circle"></i> دعم متواصل 24/7</li>
+      </ul>
+      <a href="#Offers" class="btn btn-success cta-btn">اطلب الآن</a>
     </div>
-  </section>
-  <!-- END SECTION MAIN -->
+    <div class="Subscription" data-aos="fade-right">
+      <img src="./image/Home.png" alt="وصلي" />
+    </div>
+  </div>
+</section>
+<!-- END SECTION MAIN -->
+
 
    <!-- START SECTION Offers   -->
-   <section class="Offers" id="Offers">
-    <h1> العروض</h1>
-    <h2>
-      اكتشف أفضل عروضنا بما يناسب ذوقك ووضعك الصحي
-    </h2>
-    <div class="container">
-      <div class="box">
-        <div class="content">
-          <img src="./image/dish1.png" alt="">
-          <h1>وجبة الفطور والعشاء</h1>
-          <button>اشترك الان</button>
-        </div>
+<section class="Offers" id="Offers">
+  <h1>العروض</h1>
+  <h2>اكتشف أفضل عروضنا بما يناسب ذوقك ووضعك الصحي</h2>
+  <div class="container">
+    <div class="box" data-aos="zoom-in">
+      <div class="content">
+        <img src="./image/dish1.png" alt="وجبة الفطور">
+        <h1>وجبة الفطور والعشاء</h1>
+        <p>تشكيلة صحية ومتنوعة تبدأ من 1200 دج/شهر</p>
+        <button>اشترك الآن</button>
       </div>
-      <div class="box">
-        <div class="content">
-          <img src="image/Home.png" alt="">
-          <h1>وجبة الفطور والعشاء</h1>
-          <button>اشترك الان</button>
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <img src="image/dish1.png" alt="">
-          <h1>وجبة الفطور والعشاء</h1>
-          <button>اشترك الان</button>
-        </div>
-      </div>
-      
     </div>
-  </section>
-  <!-- end SECTION Offers -->
-
-    <!-- START SECTION Prices   -->
-    <section class="Prices" id="Prices">
-      <h1> اسعار الوجبات</h1>
-      <h2>
-       تصفح التطبيق للحصول على افضل الاسعار      
-      </h2>
-      <div class="container">
-        <div class="box">
-          <div class="content">
-            <div class="photo">
-              <img src="./image/dish1.png" alt="">
-            </div>
-            <div class="txt">
-              <h1> ارز بالدجاج</h1>
-              <P>350 dz</P>
-              <button>متوازن</button>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <div class="content">
-            <div class="photo">
-              <img src="./image/dish1.png" alt="">
-            </div>
-            <div class="txt">
-              <h1> ارز بالدجاج</h1>
-              <P>350 dz</P>
-              <button>متوازن</button>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <div class="content">
-            <div class="photo">
-              <img src="./image/dish1.png" alt="">
-            </div>
-            <div class="txt">
-              <h1> ارز بالدجاج</h1>
-              <P>350 dz</P>
-              <button>متوازن</button>
-            </div>
-          </div>
-        </div>
-       
+    <div class="box" data-aos="zoom-in" data-aos-delay="100">
+      <div class="content">
+        <img src="./image/Home.png" alt="وجبة الغداء">
+        <h1>وجبة الغداء العائلية</h1>
+        <p>وجبة متكاملة تكفي 4 أشخاص فقط بـ 1600 دج</p>
+        <button>اشترك الآن</button>
       </div>
-    </section>
-    <!-- end SECTION Prices -->
+    </div>
+    <div class="box" data-aos="zoom-in" data-aos-delay="200">
+      <div class="content">
+        <img src="./image/dish1.png" alt="وجبة دايت">
+        <h1>وجبة دايت للريجيم</h1>
+        <p>سعرات محسوبة لكل من يتبع نظام غذائي</p>
+        <button>اشترك الآن</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END SECTION Offers -->
+
+
+   <!-- START SECTION Prices   -->
+<section class="Prices" id="Prices">
+  <h1>أسعار الوجبات</h1>
+  <h2>تصفح التطبيق للحصول على أفضل الأسعار</h2>
+  <div class="container">
+    <div class="box" data-aos="fade-up">
+      <div class="content">
+        <div class="photo">
+          <img src="./image/dish1.png" alt="طبق أرز بالدجاج">
+        </div>
+        <div class="txt">
+          <h1>أرز بالدجاج</h1>
+          <p class="desc">وجبة متكاملة تحتوي على بروتين وكربوهيدرات مناسبة للغداء.</p>
+          <p class="price">350 د.ج</p>
+          <span class="tag">متوازن</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" data-aos="fade-up" data-aos-delay="100">
+      <div class="content">
+        <div class="photo">
+          <img src="./image/dish1.png" alt="طبق نباتي">
+        </div>
+        <div class="txt">
+          <h1>سلطة خضراء</h1>
+          <p class="desc">خيار ممتاز للنباتيين، غني بالألياف والفيتامينات.</p>
+          <p class="price">250 د.ج</p>
+          <span class="tag">نباتي</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" data-aos="fade-up" data-aos-delay="200">
+      <div class="content">
+        <div class="photo">
+          <img src="./image/dish1.png" alt="وجبة دايت">
+        </div>
+        <div class="txt">
+          <h1>صدر دجاج مشوي</h1>
+          <p class="desc">وجبة دايت عالية بالبروتين ومنخفضة بالسعرات الحرارية.</p>
+          <p class="price">400 د.ج</p>
+          <span class="tag">دايت</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END SECTION Prices -->
+
 
 <!-- START SECTION شركاؤنا -->
 <section class="partners" id="partners">
@@ -249,6 +264,31 @@
   </section>
       <!-- end section questions -->
 
+<!-- START SECTION Location -->
+<section class="location" id="location">
+  <h1>موقعنا</h1>
+  <h2>تفضل بزيارتنا أو اطلب توصيل أينما كنت</h2>
+  <div class="container">
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.9398038408996!2d3.0587569757213056!3d36.753770072250996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fadf26ecbf0c5%3A0x63c5f39a7a1a9b49!2z2KfZhNiv2YrYqQ!5e0!3m2!1sar!2sdz!4v1612020360534!5m2!1sar!2sdz"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+    <div class="details">
+      <h3>العنوان</h3>
+      <p>شارع القدس، الجزائر العاصمة</p>
+      <h3>ساعات العمل</h3>
+      <p>السبت - الخميس: 9:00 صباحاً - 9:00 مساءً</p>
+      <p>الجمعة: مغلق</p>
+      <h3>رقم الهاتف</h3>
+      <p>+213 123 456 789</p>
+    </div>
+  </div>
+</section>
+<!-- END SECTION Location -->
+
+
   <a href="#" class="to-top">
     <i class="fas fa-chevron-up"></i>
   </a>
@@ -257,6 +297,8 @@
  
 
   <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init()</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
